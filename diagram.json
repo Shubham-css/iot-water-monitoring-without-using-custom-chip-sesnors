@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Shubham",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -100 },
+
+    { "type": "wokwi-slide-potentiometer", "id": "ph", "top": 120, "left": 120 },
+    { "type": "wokwi-slide-potentiometer", "id": "tds", "top": 0, "left": 120 },
+    { "type": "wokwi-slide-potentiometer", "id": "turb", "top": -120, "left": 120 }
+  ],
+
+"connections": [
+
+["ph:SIG", "esp:32", "green"],
+["ph:VCC", "esp:3V3", "red"],
+["ph:GND", "esp:GND", "black"],
+
+["tds:SIG", "esp:35", "green"],
+["tds:VCC", "esp:3V3", "red"],
+["tds:GND", "esp:GND", "black"],
+
+["turb:SIG", "esp:34", "green"],
+["turb:VCC", "esp:3V3", "red"],
+["turb:GND", "esp:GND", "black"],
+
+["esp:TX", "$serialMonitor:RX", "", []],
+["esp:RX", "$serialMonitor:TX", "", []]
+
+]
+}

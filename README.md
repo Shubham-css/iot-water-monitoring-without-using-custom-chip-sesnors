@@ -66,7 +66,7 @@ An IoT-based water quality monitoring system built using ESP32 and standard sens
 
 ## 🔗 Wokwi Simulation
 
-https://wokwi.com/projects/458360971543506945
+https://wokwi.com/projects/458490096716046337
 
 
 
